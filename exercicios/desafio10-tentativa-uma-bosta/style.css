@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(50, 50, 50);
+    margin: 0px;
+}
+
+.back {
+    background-image: linear-gradient(to bottom, rgb(68, 248, 68), rgb(27, 75, 27));
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.378);
+
+}
+header > h1 {
+    text-align: center;
+    color: rgb(207, 255, 216);
+}
+header > p {
+    text-align: center;
+    color: rgb(207, 255, 216);
+}
+header > a{
+    margin-right: 7px;
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    background-color: rgba(172, 255, 172, 0.403);
+    color: rgb(42, 107, 38);
+    margin: 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+main {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 3px 3px 6px black;
+}
+.titulos {
+    padding: 7px;
+    margin: 0px;
+}
+.conteudo {
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
+}
+
+#extra {
+    background-color: rgb(141, 197, 95);
+    outline: 10px white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.382);
+}
+.rodape {
+    color: white;
+}
+
+#titext {
+    background-color: rgb(18, 86, 18);
+    color: white;
+    padding: 7px;
+    margin: 0px;
+    border-radius: 15px 15px 0px 0px;
+}

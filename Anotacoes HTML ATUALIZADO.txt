@@ -1,0 +1,236 @@
+CURSO HTML
+
+
+   HISTORIA
+
+
+=> A internet veio da ARPANET(tecnologia fundada na guerra fria pelos EUA).
+=> HTML(Hyper Text Marckup Language). Linguagem de programação para hipertexto, em português
+=> CSS(Cascading Style Sheets). Folhas de estilo em cascata, em português.
+=> WWW(World Wide Web) = Rede de alcance mundial.
+=> 01000001 = A
+	Codigo multibyte(UTF-8)
+
+
+    CONCEITOS
+
+
+=> MB = Armazenamento(SSD de 512 GB: GigaBytes). Mb = Transmissão de dados(Internet de 100 Mb: Megabits).
+=> Cliente = PC. Faz coneção com o modem, que modula a onda de quadrada para senoidal e vice versa. O modem
+faz contato com o servidor de um site, que tem um endereço numérico. o DNS(Domain Name System. Em português
+Sistema de nome de domínio).
+=> Dominio: [gustavoguanabara].github.io <- é um nome único pago anualmente.
+=> Hospedagem: Espaço para armazenar arquivos pago mensalmente, espaço memória, recursos.
+										          U  R  L
+= O que é uma URL(Uniform Resource Locator/Localizador de recurso único): [[www].[github[.com]]/[gustavoguanabara]].
+									sub-Dominio DOMÍNIO TLD	    CAMINHO	
+											   
+=> GTLD(Generic Top Level Domain) / CCTLD(Country Code Top Level Domain. É o .br)
+=> HTML – Focada em conteúdo, pode ser: Texto, imagem, vídeo, tabelas, listas, etc.
+=> CSS – Foco em design, pode ser: cores, sombras, tamanhos, posicionamento, etc.
+=> JavaScript - Interações: menu interativo, animação, pop-up, validação.
+
+=> Conteúdo em HTML:
+	<h1>(abertura de tag)Exemplo de título(conteúdo)</h1>(fechamento de tag)
+      <p>Exemplo de parágrafo</p>
+	<img src="foto.png" alt="Exemplo de foto">
+	      |              |           |
+	abertura de tag   parâmetro     valor
+
+=> Estilo em CSS:
+	h1{
+	|	font-family:Arial;
+    seletor	font-size:20pt;
+		color:blue;
+
+	}
+
+=> Estrutura Básica de HTML:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <meta charset="UTF-8">
+    significa que o site será compatível com o padrão UTF-8
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+	
+
+  </head>
+  <body>
+	<h1>Olá, Mundo!</h1>
+
+
+
+  </body>
+</html>
+
+=> <head>...</head> é a parte da CONFIGURAÇÃO DO SITE
+já a parte <body>...</body> é a parte do CONTEÚDO DO SITE
+
+=> Tags(Marcas/Marckup): 
+	<hr>(linha horizontal).
+	<h1>TÍTULO</h1>
+	<p>PARÁGRAFOS</p> 
+
+
+      IMAGEM
+
+
+=> Emojis:
+Para adicionar emojis, colocar &#x seguido de seu código hexadecimal. Exemplo: &#x1F525;(precisa colocar ";" no final).
+
+=> Direito de imagem:
+Posso utilizar qualquer imagem para fazer meu site? Não! Precisamos achar imagem sem direito autoral, de uso livre.
+Sites para procurar imagem de uso livro:
+ unsplash.com    pexels.com   freepic.com
+
+=> Melhores tamanhos de imagem para site:
+650x e 1200x
+
+=> Imagem no site:
+É possível utiliza imagens dentro da mesma pasta; <img src="html-5-286.png" alt="Logo HTML5">;
+dentro de subpastas; <img src="imagens/css3-full-286.png" alt="Logo CSS3">;
+e também de links externos, só colar dentro do src="" o endereço da imagem.
+
+=> Para favicon:
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+Site de icones gratuitos: iconarchive
+Site para desenhar o próprio icone: favicon.cc
+Site para criar icone a partir de texto ou png: favicon.io
+**O ICONE PRECISA ESTAR EM 16x16!!**
+
+
+    TEXTO
+
+
+=> Hierarquia de títulos:
+	h1: título principal;
+	h2: subtitulos;
+	h3: subtítulos dos subtítulos;
+	...h6: subtítulo dos sub dos sub dos sub
+H1 é o nível 1, H2 nível 2 e por aí vai. Deve-se respeitar a hierarquia. Um H3 não pode aparecer antes de um H2, ou logo depois de um H1!
+Necessitando de alteração de tamanho nos títulos, recorrer ao CSS. A hierarquia precisa ser respeitada.
+
+=> Comando "lorem" gera lero lero.
+
+
+     FORMATAÇAO
+
+
+=> HTML4 em relação ao HTML5 -- AULA SEMANTICA HTML5
+	 Muitas tags não estão mais em uso no HTML5, sendo algumas delas:
+marquee; <u></u>; font; center; bgcolor dentro do <body>
+
+=> Negrito e itálico em HTML5:
+Utilizar <strong> para negrito e <em> pra itálico.
+
+=> Marcação em HTML:
+Primeira maneira: Colocando o style dentro da tag <mark>
+Segunda maneira: Colocando um style no cabeçalho(<head>):
+<style>
+	mark{
+	background-color = "limegreen"
+}
+<style>
+
+=> Comando <code> pra mudar a fonte de um parágrafo, comando <prev> pra respeitar identação.
+=> Usar <q> no lugar de "" QUANDO FOR UMA CITAÇÃO!
+=> <blockquote> quando for fazer uma citação grande.
+=> Tag <abbr> para abreviações. Sintaxe:
+<abbr title="Hypertext Marckup Language">HTML</abbr>
+
+
+   LISTAS
+
+=> <ol> Listas ordenadas. Da para estabelecer o tipo de ordenamento, em numeral, numero romano e letras com o <ol type="">.
+=> <ul> Listas NÃO ordenadas. Da para mudar a marcação com o <ul type="square"> por exemplo.
+=> É possível encadear listas dentro de listas, com a estrutura:
+<ol>
+     <li>Blabla</li>
+	<ul>
+	    <li>Bla</li>
+	</ul>	
+</ol> 
+
+     LINKS
+
+links externos:
+
+=> Tag <a>(âncora para hyperlink): <a href"www.dakopdkaspodd.com.br">alguma coisa</a>
+=> Para que o hyperlink não sobreponha o seu site, usar a tag target="_blank" dentro da ancoragem:
+<a href="bla.com" target="_blank" rel="external">site externo bla</a>
+					  |	
+                                 (relacionado a um link externo)   
+
+
+links internos:
+
+=> Também com a tag <a>, coloque no href="" o arquivo dentro da página, por exemplo: href="pagina2.html".
+
+=> Falando da tag "rel" dentro da ancoragem, ela informa diretamente ao mecanismo do google qual a intenção do link.
+Exemplo: rel="nofollow", você não da aval pra esse conteúdo, não quer perpetua-lo. rel="external", é um link externo
+rel="next": página seguinte. rel="prev": página imediatamente anterior
+
+É POSSÍVEL ANCORAR UMA IMAGEM! SITAXE:
+<a href=""><img src=""></a>
+
+links para download
+
+=> Colocar no href="o arquivo ou pasta para baixar", colocar a tag download="nome do arquivo ou pasta" e o type="consultar o site iana.org"
+
+
+	TOPICO IMPORTANTÍSSIMO!
+
+IMAGENS DINÂMICAS:
+Quando o usuário abre o site de um celular, computador ou televisão, a exibição precisa mudar para que a experiência do usuário seja a melhor 
+possível. Logo, precisamos de uma imagem pequena, uma média e uma grande, que se alterará de acordo com a exibição do site.
+  OBEDECER A SEGUINTE SINTAXE:
+<source media="(max-width: 750px)" srcset="imgs/img-peq.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/img-med.png" type="image/png">
+        <img src="imgs/img-gnd.png" alt="img flexivel">
+
+Essa sintaxe significa: SE a exibição for no MÁXIMO 750 píxels, a imagem será a pequena(imgs/img-peq.png). (ESPECIFICAR SEMPRE O TIPO DA IMAGEM
+NA TAG "TYPE") SE a exibição for no MÁXIMO 1050 píxels, a imagem será a média(imgs/img-med.png). Agora se for maior que 1050, será a grande:
+<img src="imgs/img-gnd.png">.
+SEMPRE OBEDECER A ORDEM DE MENOR PARA MAIOR QUANDO UTILIZAR AS SOURCE!!
+
+
+	AUDIO
+
+Implamentando audio no site:
+podemos adicionar da seguinte forma: 
+<audio preload="metadata" controls>
+    <source src="midia/drintiter.mp3" type="audio/mpeg">
+    <source src="midia/drintiter.wav" type="audio/wav">
+    <p>Infelizmente o navegador não suporta audio. <a href="midia/drintiter.mp3">Clique aqui para baixar o mp3.</a></p>
+   </audio>
+Quando você colocar a tag "audio" ele já vai colocar o "src" automaticamente. Você irá apagar o "src" e abrir outro source dentro
+da tag audio(source:src).
+O que está acontecendo ali em cima?
+Se o site não carregar o mp3, ele vai tentar carregar o wav. Se não for nenhum dos 2, aparece o parágrafo abaixo.
+
+
+	VIDEO
+
+Baixar SEM DIREITO AUTORAL! Exemplo de site: pexels
+Compatibilidade: mp4; webm; ogv
+
+((SE ATENTAR AO CONSUMO DE BANDA PELO TRÁFEGO DE DADOS))
+Quando você hospeda um vídeo no site com a tag <video>:
+
+<video width="500" poster="imagens/thumb.png" controls>(poster é a thumbnail)
+        <source src="midia/video-winter.mp4" type="video/mp4">
+        <source src="midia/video-winter-webm.webm" type="video/webm">
+        <source src="midia/video-winter-ogv.ogv" type="video/ogg">
+</video>
+Vai ter um consumo de banda muito grande, logo um custo muito maior! Vídeos hospedados com a tag <video> podem e vão
+consumir muito tráfego de dados.
+
+INCORPORAÇÃO DE VIDEO DO YOUTUBE
+clicar em "compartilhar", incorporar, e copiar o código html gerado. Após copiar, só colar.
+
+INCORPORAÇÃO DE VIDEO DO VIMEO.COM
+Mesmo passo a passo
+

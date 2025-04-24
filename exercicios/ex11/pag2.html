@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MickaMi</title>
+</head>
+<body>
+    <h1>MickaMi Mudando de tamanho</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/mickamicka-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imgs/mickamicka-m.jpg" type="image/jpg">
+        <img src="imgs/mickamicka-g.jpg" alt="micka flex">
+    </picture>
+    <br>
+    <a href="index.html" rel="prev">Pagina anterior</a>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a colocar sonzinho?</p>
+   <audio preload="metadata" controls>
+    <source src="midia/drintiter.mp3" type="audio/mpeg">
+    <source src="midia/drintiter.wav" type="audio/wav">
+    <p>Infelizmente o navegador não suporta audio. <a href="midia/drintiter.mp3">Clique aqui para baixar o mp3.</a></p>
+   </audio>
+    <!--COMPATIVEL COM MP3 - WAV - OGG-->
+</body>
+</html>

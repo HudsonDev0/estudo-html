@@ -1,0 +1,287 @@
+	CSS
+ESTILO       DESIGN
+
+Método inline:
+colocar parâmetros dentro do <body>, do <p>, do <h1>... exemplo:
+
+<body style="background-color: lightblue; font-family: Arial, Helvetica, sans-serif;" >
+    <h1 style="color: mediumblue;">Capítulo 1</h1>
+    <h2 style="color: darkred;">Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor</p>
+    <h2>Capítulo 1.2</h2>
+    <p style="text-align: justify;">Lorem ipsum dolor sit</p>
+
+comandos: style; color; background-color; text-align; font-size; font-family;
+
+(MÉTODO INLINE NÃO É RECOMENDADO PRA FAZER EDIÇÃO DE LARGA ESCALA. APENAS PARA COISAS ESPECIFICAS)
+
+DESVANTAGENS: TODAS
+
+
+Método Local / Interno:
+Criar um <style> em baixo do title na camada head. Exemplo:
+<title>Estilos Locais / Internos</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1 {
+            color: mediumblue;
+            background-color: aquamarine;
+        }
+        h2 {
+            color: darkred;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+
+DESVANTAGENS: Geralmente a parte de estilo acaba ocupando mais linhas que a parte de semântica. E se seu site tiver
+30 páginas, você vai ter que dar ctrl C + ctrl V em todas as páginas. E se você tiver que mudar alguma coisa depois?
+FODEU, FI!!! Vai ter que alterar página por página.
+
+
+Método Externo:
+crie um arquivo chamado style.css e faça as alterações:
+
+body {
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    color: mediumblue;
+    background-color: aquamarine;
+}
+h2 {
+    color: darkred;
+}
+p {
+    text-align: justify;
+}
+
+No arquivo que você quiser implementar esse estilo, só colocar link:css que irá gerar:
+<link rel="stylesheet" href="style.css">
+E pronto!
+
+	CORES
+Toda cor é formada por um código hexadecimal. Exemplo: #0000ff -> azul.
+Como funciona esse código?
+-- Toda cor é formada por tons de vermelho, verde e azul. Nesse código temos: 00 de vermelho, 00 de verde e "ff" de azul.
+E como funciona a base hexadecimal? Temos os números e letras:
+(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+Os tons de cores vai de 0 até 255. Esse 255 significa, em hexadecimal, ff. Por isso que naquela cor ali citada, o azul
+tem 0 de tudo, mas de azul tem "ff", que seria 255(ou 100), ou seja: O MÁXIMO
+
+É possível representar a cor por código hexadecimal, por rgb, e por hsl(hue, saturation lightness)
+
+A transparência é representada pela nomenclatura "alpha".
+Para harmonia das cores revisar o PDF ou o vídeo de Harmonia das cores.
+
+FERRAMENTAS PARA PALETA DE COR(AJUDAR O DESENVOLVEDOR Q N É DESIGN NÉ PAI)
+color.adobe.com
+(foda)
+paletton.com
+(MAIS FODA AINDA O BGLH SIMULA UM SITE PQP)
+coolors.com
+(Pra quem ta mais perdido)
+
+CRIANDO GRADIENTE EM CSS
+
+comando background-image linear-gradient
+
+
+Alguns outros comandos, porque são muitos kkkkk:
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #9c98eecb;
+    background-color: #ffffff;
+    width: 570px;
+    padding: 10px;
+    margin: auto;
+    text-shadow: 1px 1px 2px #522f4adb;
+    font-family(quando a fonte tiver nome composto, deve-se usar aspas para representar. Exemplo: 'Courier New')
+    font-weight
+    text-decoration
+    text-indent (paragrafo)
+
+       
+
+       TIPOGRAFIA
+
+A primeira letra a ser feita quando criam uma fonte nova, é o "x". Ela determinará o tamanho de todas as letras minúsculas
+da fonte: "altura x".
+Site de fontes: w3schools.com
+
+/*Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas relativas
+em, ex, rem, vw, vh, %
+*/
+
+!!!!!A RECOMENDAÇÃO PELA W3C(World Wide Web Consortium: a principal organização de padronização da World Wide Web) é usar
+somente "em" nas medidas relativas e "px" nas medidas absolutas!!!!!
+Na dúvida, usa SEMPRE o "em"
+
+o "pt(ponto" é utilizado somente para impressão.
+
+Propriedade "shorthand"
+
+Ao invés de utilizar:
+
+font-family: ;
+font-weight: ;
+font-size: ;
+font-style: ;
+
+Utilize:
+
+font: italic bolder 3em 'work sans' san serif;
+
+sempre obedeça a ordem: font-style > font-weight > font-size > font-family
+
+DESCOBRIR FONTES COM IMAGEM
+whatfontis.com
+
+
+IDENTIFICADORES:
+
+Tudo que em html é id, no CSS é #!
+Em HTML é class, em css é .
+
+Class é quando você quer modificar um grupo de elementos. o ID é quando você quer modificar só um elemento.
+Exemplo:
+	Em HTML
+<h1 id="principal">Título bolado</h1>
+se tivermos usando id, colocaremos no css:
+h1#principal{
+alterações..
+} 
+E assim, teremos alterações APENAS nesse h1.
+Agora utilizando class, temos:
+<h1 class=titg>Título bolado</h1>
+teremos, no css, isso:
+.titg {
+alterações...
+}
+E poderemos colocar esse class em qualquer coisa. Tudo que tiver esse "class="titg"" vai utilizar essas alterações.
+(USAR O ID DESSA FORMA ATÉ FUNCIONA, MAS É ERRADO! CONTRA AS NORMAS DA W3C:World Wide Web Consortium: a principal 
+organização de padronização da World Wide Web).
+
+PseudoClasses ->
+hover, ativated, visited e etc...
+
+PseudoElementos ->
+after, before...
+
+Recapitulando: 
+Classe em css: "."
+Id em css: "#"
+Pseudoclasse em css: ":"
+Pseudoelemento em css: "::"
+
+
+   MODELO DE CAIXAS
+
+Todo elemento visível no site é uma caixa. Em volta de qualquer texto, existe uma "linha imaginária" que traça essa box.
+Então quando eu crio um seletor em CSS e modifico um título, por exemplo, na verdade eu estou modificando A BOX desse título.
+A caixa é medida em height e width(altura e largura).
+
+É possível modificar a altura, largura, borda etc de um h1, de um link e qualquer coisa!
+Veja:
+<style>
+    h1 {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkgray;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    a {
+        border: 2px dashed red;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+</style>
+
+Tipos de bordas: 
+dashed(traços)
+dotted(ponto)
+double(duas bordas)
+groove(3D)
+
+Começar sempre a configuração de padding e margin pelo top e seguir em sentido horário. Exemplo:
+cima, direita, baixo e esquerda
+margin: auto <- centraliza a caixa.
+
+UTILIZANDO SHORTHANDS PARA CONFIGURAÇÕES DE CAIXAS
+Borda:
+border: largura solid(ou dashed ou dotted) cor.
+Acolchoamento:
+padding: largura de cima   largura da direita   largura de baixo   largura da esquerda
+Margem:
+margin: cima dreita baixo esquerda
+Linha de fora da borda:
+outline: cima direita baixo esquerda   
+
+DE OLHO NAS CAIXAS!
+É possível mudar um box level, colocando o comando "display: inline;"
+E também é possível fazer o contrário, colocando "display: block;"
+
+Tags de agrupamento:
+<span>(inline-level) e <div>(block-level)
+Divs semânticas:
+header; footer; main; nav; section; article; aside;
+Criando sombra pras divs: box-shadow: horiz  vert  spread
+Pra ajudar na visualização, usar o devtools.
+Arredondar vértices de caixas:
+
+border-radius:
+-Bem versátil. Tem como fazer bordar de diversas formas. Da até pra transformar um retângulo em círculo.
+
+
+   VARIÁVEIS EM CSS
+
+tag de declaração:
+:root {
+--variável(toda variável começa com "--")
+--cor0: #ab9d843;
+--fonte-destaque: 'Bebas Neue', cursive;
+}
+
+
+  CONFIGURAÇÃO GLOBAL
+
+Quando você utiliza essa tag, em css:
+* {
+
+}
+
+Você faz configurações GLOBAAIS
+
+
+REVISAR MUUUUUUUUITO O DESAFIO 10 !!!!!!!!!!
+
+
+MARGEM NEGATIVA:
+utilizado para colar uma box na outra.
+
+
+ATENÇAO PARA VIDEO DE OUTRAS PLATAFORMAS INCORPORADOS NO SITE
+
+Envelopar o iframe com uma div..
+exemplo:
+<div>
+<iframe width="560" height="315" src="youtube.com/kbaoskdlçaklç" bkaopksdo dasdsadsadsadasdas dasdsada
+dasdasdasdas dasdsa view>
+</div>

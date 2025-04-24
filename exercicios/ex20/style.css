@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div:hover {
+    color:red
+}
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+div > p {
+    display: none;
+}
+
+a {
+    color: rgb(255, 90, 8);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(162, 63, 13);
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: #4DCCBD;
+    font-style: italic;
+
+}
+.especial {
+    background-color: rgba(255, 0, 0, 0.345);
+    width: 175px;
+    font-weight: 600;
+}
+.especial:active {
+    background-color: #61fcea74;
+}

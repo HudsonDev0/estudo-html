@@ -1,0 +1,8 @@
+		GIT E GITHUB
+
+Git: Software que te permite fazer um repositório local.
+Github: Site que te permite hospedar seu repositório local.
+Repositório local: arquivos do seu computador(git).
+Repositório remoto: onde você hospeda seu repositório local.
+
+Atualizar o repositório remoto: "push".
