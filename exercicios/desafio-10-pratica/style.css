@@ -121,6 +121,7 @@ main img.peq{
 }
 
 article h1{
+    font-size: 1.5em;
     color: var(--cor5);
     font-family: var(--fonte-titulos);
    margin: 10px 0px;
@@ -129,6 +130,7 @@ article h1{
 }
 
 article h2{
+    font-size: 1.35em;
     color: var(--cor2);
     font-family: var(--fonte-titulos);
     margin: 10px 0px;
