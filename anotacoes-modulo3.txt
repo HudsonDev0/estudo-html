@@ -24,3 +24,8 @@ Atualizar o repositório remoto: "push".
 . Clique em "file", "options" e deslogue da sua conta;
 . Clique em "file", "git", e apague as credenciais;
 . Apague o repositório da lixeira.
+
+
+	USANDO IMAGEM PARA BACKGROUND:
+
+background-image: url('imagens/pattern004.png');
