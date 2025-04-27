@@ -6,3 +6,21 @@ Repositório local: arquivos do seu computador(git).
 Repositório remoto: onde você hospeda seu repositório local.
 
 Atualizar o repositório remoto: "push".
+
+
+	GITHUB EM VARIOS PC:
+
+. Abra o github;
+. Logue na sua conta;
+. Clone o repositório para a máquina que não tem;
+. Clique em "file", "git" e confirme as credenciais;
+. Depois de todas as atualizações no projeto...
+. Atualize no github com o push;
+
+	SAINDO SEM DEIXAR RASTROS:
+
+. Feche o visual studio;
+. Clique em "repositorio" e então "remove";
+. Clique em "file", "options" e deslogue da sua conta;
+. Clique em "file", "git", e apague as credenciais;
+. Apague o repositório da lixeira.
