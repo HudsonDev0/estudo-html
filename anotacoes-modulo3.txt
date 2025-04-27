@@ -29,3 +29,11 @@ Atualizar o repositório remoto: "push".
 	USANDO IMAGEM PARA BACKGROUND:
 
 background-image: url('imagens/pattern004.png');
+
+	MUDANDO O TAMANHO DA IMAGEM
+
+background-size: 200px /* por */ 200px;
+
+	MUDANDO O PADRAO DE REPETIÇÃO DA IMAGEM
+
+background-repeat: repeat/no-repeat/repeat-x/repeat-y/
