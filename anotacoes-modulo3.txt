@@ -55,4 +55,13 @@ body{
 
 </style>
 
+	TAMANHO DA IMAGEM NO BACKGROUND
+
+<style>
+	body{
+	   background-size: contain(exibe sempre a imagem toda)/100%(exibe a imagem adaptável, mas achata a imagem = ruim),
+	auto(padrão), cover(cobrir a tela inteira mesmo que tenha que dar uma "picotadinha" na imagem);
+}
+</style>
+
 
