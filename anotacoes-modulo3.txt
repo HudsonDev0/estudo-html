@@ -37,3 +37,22 @@ background-size: 200px /* por */ 200px;
 	MUDANDO O PADRAO DE REPETIÇÃO DA IMAGEM
 
 background-repeat: repeat/no-repeat/repeat-x/repeat-y/
+
+	DEIXANDO O BODY COM O TAMANHO DA VIEWPORT
+
+<style>
+body{
+height: 98vh(view height);
+}
+</style>
+
+	POSICIONANDO IMAGENS NO BACKGROUND
+
+<style>
+body{
+    background-position: right bottom/right top/right center/left center/center center/ (a lógica é sempre X, depois Y)
+}
+
+</style>
+
+
