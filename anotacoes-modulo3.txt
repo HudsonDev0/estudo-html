@@ -64,4 +64,38 @@ body{
 }
 </style>
 
+	FIXAR IMAGEM NO BACKGROUND(para não rolar junto)
+
+comando: background-attachment(vínculo): fixed(pra fixar dãa)/scroll(padrão);
+
+	SHORTHAND PARA BACKGROUND:
+
+ORDEM: 
+1. Cor;
+2. Imagem;
+3. Posição;
+4. Repetição(ou não);
+5. Vínculo.
+
+Exemplo: background: black(color) url('imagens/xxxx.jpg')(img) top center(position) no-repeat(repeat) fixed(attachment).
+
+	ALINHAMENTO VERTICAL DE CAIXA
+
+criar um conteúdo dentro de um container => container >> conteúdo:
+
+<section id="container">
+	<article id="conteudo">
+
+	</article>
+</section>
+
+o CONTAINER, vai ter posição relativa(position: relative);
+o CONTEUDO, vai ter posicionamento absoluto(position: absolute);
+
+Quando você coloca o posicionamento absoluto, você consegue mexer nos seguintes parâmetros:
+-top
+-left
+
+Utilizar o transform: translate() -> para mexer na caixa, podendo usar píxel, porcentagem...
+
 
