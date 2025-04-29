@@ -77,7 +77,7 @@ section.imagem{
     background-color: bisque;
     color: white;
     box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.500);
-    background-attachment:fixed;
+    
 }
 
 section.imagem > p{
@@ -91,11 +91,13 @@ section.imagem > p{
     background-image: url('../imagens/background001.jpg');
     background-position: center center;
     background-size: cover;
+    background-attachment:fixed
 }
 
 #img2{
     background-image: url('../imagens/background002.jpg');
     background-size: cover;
+    background-attachment:fixed
 }
 
 footer{
