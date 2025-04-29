@@ -99,3 +99,34 @@ Quando você coloca o posicionamento absoluto, você consegue mexer nos seguinte
 Utilizar o transform: translate() -> para mexer na caixa, podendo usar píxel, porcentagem...
 
 
+IMPLEMENTAÇÃO DE FONTES DA ERRADO::::
+
+se a implementação de fontes der errado no arquivo style, faça dentro do html numa tag <style>
+
+
+	CRIANDO TEXTO COM TAMANHO ADAPTÁVEL:
+
+Colocar(DENTRO DA DIV, NÃO DO PARÁGRAFO Xvw("X" porcento da LARGURA(w = width) da viewport) no font-size:
+
+section{
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    (font-size: 2vw;) <-
+}
+
+section p{
+
+    font-family: var(--fonte2);
+    padding: 5px;
+}
+
+
+
+
+
+
+
+

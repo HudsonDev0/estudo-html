@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Playwrite AU SA", cursive;
+    --fonte3: "Amatic SC", sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+
+    
+
 html, body{
     background-color: rgb(132, 132, 132);
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -19,6 +30,8 @@ header{
 header h1{
     padding-top: 35px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 4.5em;
 }
 
 header p{
@@ -43,6 +56,12 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 40px;
+    font-size: 2.5vw;
+}
+
+section p{
+    font-family: var(--fonte2);
+    padding: 5px;
 }
 
 section.normal{
@@ -57,7 +76,8 @@ section.imagem{
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.319);
-    width: 350px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
