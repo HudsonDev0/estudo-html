@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        td, th{
+            border: 1px solid black;
+            padding:10px;
+        }
+
+        th{
+            background-color: rgb(186, 186, 186);
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        .pais{
+            color: rgb(86, 30, 80);
+            font-weight: bold;
+            text-align: center;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: aquamarine;
+            padding: 8px;
+        }
+
+        /*
+        pseudoclasse nth-child(2n) pra zebrar uma tabela.. ok."2n "
+        */
+
+        tr:nth-child(2n){
+            background-color: rgb(255, 255, 160);
+        }    
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas em html5</h1>
+    <!--
+    ANATOMIA DE TABELAS GRANDES
+
+     Table
+	Thead
+	   tr(linha), td(dado), th(título)
+	Tbody
+	   tr, td, th
+	Tfoot
+	   tr, td, th
+
+    -->
+    <table>
+        <caption>5 Maiores populações no Brasil</caption>
+       <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 120px;">População</th>
+            <th scope="col" style="width: 160px;">País Comparavel</th>
+        </tr>    
+       </thead>
+       <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.973.194</td>
+                <td class="pais">Iraque</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.322.691</td>
+                <td class="pais">Zambia</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.219.679</td>
+                <td class="pais">Camboja</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.850.513</td>
+                <td class="pais">Guiné</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.824.665</td>
+                <td class="pais">Haiti</td>
+            </tr>
+       </tbody>
+       <tfoot>
+            <tr>
+                <th scope="row">Total dos 5 Maiores</th>
+                <td>muita coisa</td>
+            </tr>
+       </tfoot>
+    </table>
+</body>
+</html>

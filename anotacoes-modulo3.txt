@@ -151,6 +151,21 @@ Table(tabela)
 	<td>B2
 	<td>C2
 
+	ANATOMIA DE TABELAS GRANDES
+
+     Table
+	Thead
+	   tr(linha), td(dado), th(título)
+	Tbody
+	   tr, td, th
+	Tfoot
+	   tr, td, th
+
+	SEMÂNTICA DOS ESCOPOS
+
+<Caption>Coloca um título acima da tabela</caption>
+<th scope="col">Quer dizer que esse th está no escopo de título de COLUNA, ou seja, os dados virão ABAIXO desse título.
+<th scope="row">*** Título de LINHA, ou seja, os dados virão AO LADO desse título.
 	
 
 
