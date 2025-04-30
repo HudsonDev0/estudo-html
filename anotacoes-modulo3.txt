@@ -133,9 +133,24 @@ section.imagem > p{
     padding: 5px;
 }
 
+	CRIAÇÃO DE TABELA EM HTML
+
+Hierarquia:
+Table(tabela)
+   Table row(linha de tabela "tr")
+   Table data(dado de tabela)
 
 
+<table>
+    <tr>
+	<td>A1
+	<td>B1
+	<td>C1
+   <tr>
+	<td>A2
+	<td>B2
+	<td>C2
 
-
+	
 
 
