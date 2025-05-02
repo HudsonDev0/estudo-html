@@ -175,6 +175,22 @@ exemplo:
   <tr>
       <td colspan="2">
 	
+colspan para coluna
+rowspan para linha
 
+
+	SCOPE
+
+Colocar cada escopo para cada <th> da tabela!
+scope=row: linha de escopo, onde os dados estarão ao lado.
+scope=col: coluna de escopo, onde os dados estarão a baixo.
+
+colgroup: quando há mesclagem de colunas.
+rowgroup: mesclagem de linhas.
+
+(CONSULTAR EX23)
+
+Caso seja necessário fazer tabela, rever a aula 13, cap21, mod3. Aula de <colgroup>
+aula 14, cap21, mod3 para responsividade de tabelas pro celular!
 
 
