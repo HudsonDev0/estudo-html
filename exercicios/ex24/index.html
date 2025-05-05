@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe{
+            height: 300px;
+            width: 600px;
+        }
+        #table{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brincando com iframes</h1>
+    <iframe src="https://hudsondev0.github.io/pratica-revisao" frameborder="0">
+        <a href="https://hudsondev0.github.io/pratica-revisao">Link da pagina</a>
+        <!--Caso o iframe não carregue, aparecerá o link de acesso-->
+    </iframe>
+    <iframe src="pag001.html" frameborder="0"></iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, commodi molestias aut laboriosam hic velit sint nihil tempore nam provident expedita perspiciatis ratione amet unde cum voluptatem vitae inventore dolore.</p>
+    <iframe src="pagina-extra/pag002.html" frameborder="0" id="table">
+        <p>navegador não compatível</p>
+        <!--Aviso para caso o iframe não carregue ^^^^-->
+    </iframe>
+</body>
+</html>

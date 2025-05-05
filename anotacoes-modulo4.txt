@@ -1,0 +1,26 @@
+	IFRAME
+
+  JANELA PARA OUTRO SITE
+<iframe src="https://cursoemvideo.com" frameborder="0">
+
+Nem todo site é compatível com iframe, como no caso do google. Você pode fazer da segunte forma:
+
+<iframe src="https://google.com" frameborder="0">
+ <a href="https://google.com" target="_blank">Link do google</a>
+</iframe>
+
+Caso o iframe não seja compatível, ele exibirá um link para acessar o site.
+
+O TAMANHO PADRÃO DO IFRAME É DE 300x150
+
+	MANIPULANDO IFRAMES 
+Além das estilizações do iframe, no <style>, você consegue atribuir um "name" dentro da tag <iframe>
+e utilizar no target de algum link. Exemplo:
+
+<a href="https://blablabla.com" targe="frame">Clique</a>
+
+<iframe src="" name="frame">
+
+
+Quando você clicar no link, ao invés da página carregar em outra aba ou na mesma aba, ela será exibida no iframe.
+(Consultar Ex24)
