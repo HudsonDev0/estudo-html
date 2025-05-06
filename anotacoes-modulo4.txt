@@ -24,3 +24,27 @@ e utilizar no target de algum link. Exemplo:
 
 Quando você clicar no link, ao invés da página carregar em outra aba ou na mesma aba, ela será exibida no iframe.
 (Consultar Ex24)
+
+	PROBLEMAS DO iFRAME:
+ -Problemas de segurança: por você exibir o site de outra pessoa(se for o caso), se o site da outra pessoa tiver infectado
+com algum script malicioso, o seu também estará.
+
+ -Problemas de acessibilidade: se alguma pessoa cega acessar o site, o software de leitura de tela terá dificuldade com o
+iframe.
+
+ -Problemas de busca: o bot do google tem problemas em lidar com iframe, e taca o site "mais pra baixo" quando tem uso
+de iframes.
+
+	DEIXANDO O IFRAME MAIS SEGURO
+
+Você pode colocar, dentro da tag <iframe> o parâmetro sandbox="sandbox". Caso seu site faça cadastro, isso impedirá
+que outro site utilize o seu site para roubar dados, ou algo do tipo kkkkkkkkkkk :s
+
+Colocando "allow-same-origin" dentro do sandbox, você permite o uso de formulário dentro da mesma origem, mesmo servidor.
+
+Você também pode colocar o parâmetro referrerpolicy="no-referer", para que não utilizem seus dados para fazer propaganda
+
+	INCORPORAÇÃO UTIL COM IFRAME
+
+Mapas do google, do waze e google docs!
+
