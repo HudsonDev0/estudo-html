@@ -48,3 +48,21 @@ Você também pode colocar o parâmetro referrerpolicy="no-referer", para que n�
 
 Mapas do google, do waze e google docs!
 
+
+CONHECIMENTO NOVO ADQUIRIDO NO MINI PROJETO CELULAR:
+Quando você for utilizar o hover e, quando você colocar o ponteiro do mouse no objeto, ele ficar movimentando
+os objetos do lado, coloque a "box-sizing: border-box;" fora do hover! Exemplo:
+
+section#socialmedias img{
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.399);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#socialmedias img:hover{
+    transition: 0.08s;
+    border: 2px solid white;
+}
