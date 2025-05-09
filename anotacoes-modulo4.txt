@@ -66,3 +66,84 @@ section#socialmedias img{
     transition: 0.08s;
     border: 2px solid white;
 }
+
+
+	FORMULARIOS
+
+<form action="cadastro.php">
+        <p>Nome: <input type="text" name="nome" id="nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+</form>
+
+   o input type="submit" enviará os dados colocados nos input text para o cadastro.php, nome colocado dentro da tag action
+na tag form.
+
+   O name nas tags input text, é mais útil para o html e para o php, já o id é utilizado mais em javascript
+
+   Relacionando o input(campo para preencher) com seu respectivo nome:
+Utilizando a tag <label>, conseguimos relacionar o dado a ser preenchido com a sua lacuna de preenchimento. Exemplo:
+
+form action="cadastro.php">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+</form>
+
+   Antes o Nome: não estava envelopado na tag label, agora envelopado, você relaciona ele com o input, ajudando o navegador
+a entender que se trata de um formulário e você também cria uma área maior para clicar, ajudando muito o usuário mobile.
+
+     Métodos de envio de formulário
+
+  O método padrão é o GET: após o envio do formulário, os dados aparecem na URL. Como resolver?
+  UTILIZANDO O MÉTODO POST! Com isso, não irá aparecer os dados na URL. Apesar de ainda não estarem seguros.
+ E por que não estão seguros??
+Porque você consegue acessa-los em: inspecionar elemento > network > headers(ou payload)
+Vai ter uma linha com o nome de "from data" e lá estará os dados preenchidos no formulário.
+
+  Quando utilizar get? Quando os dados não são sensíveis.
+    Quando utilizar post? Quando os dados forem sensíveis.
+(É preciso estudar https para que os dados fiquem seguros de verdade)	
+
+Quando você envia dados por GET, você só pode enviar 3000 bites(+/- 3 mil letras).
+
+Até então o formulário não está tão responsivo. Se você não preencher os campos e enviar, mesmo sem os campos ele aceita.
+Para resolver isso, temos que colocar "required" dentro da tag input. Exemplo:
+
+<form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required>
+        </p>
+        
+        <p>
+            <label for="isenha" method="post">Palavra-Passe</label>
+            <input type="password" name="senha" id="isenha" required>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+        </p>
+        <p>
+            <input type="reset" value="LIMPAR">
+        </p>
+</form>
+
+RELEMBRE! SEMPRE UTILIZE A TAG LABLE PARA OS INPUTS!    
+
+Manipule a quantidade de caracteres para o formulário utilizando os parâmetros "minlenght" e "maxlenght" dentro
+do input!
+Também tem como mudar o tamanho da lacuna com o parâmetro "size"
+Conseguimos também colocar uma mensagem pra exibir dentro da lacuna com o "placeholder"
+Agora para colocar o auto-completar, colocamos dentro da tag FORMS o parâmetro autocomplete="on"
+Colocando o autocomplete no input, você dá significado às lacunas a serem preenchidas. Exemplo:
+
+<form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="4" maxlength="15" size="15"
+ placeholder="Nome de usuário" autocomplete="username">
+        </p>
+</form>
+
+
+  
