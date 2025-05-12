@@ -101,8 +101,8 @@ a entender que se trata de um formulário e você também cria uma área maior p
 Porque você consegue acessa-los em: inspecionar elemento > network > headers(ou payload)
 Vai ter uma linha com o nome de "from data" e lá estará os dados preenchidos no formulário.
 
-  Quando utilizar get? Quando os dados não são sensíveis.
-    Quando utilizar post? Quando os dados forem sensíveis.
+  Quando utilizar get? Quando os dados não são sensíveis e quando NÃO SÃO ARQUIVOS.
+    Quando utilizar post? Quando os dados forem sensíveis E QUANDO FOREM ARQUIVOS.
 (É preciso estudar https para que os dados fiquem seguros de verdade)	
 
 Quando você envia dados por GET, você só pode enviar 3000 bites(+/- 3 mil letras).
@@ -145,5 +145,26 @@ Colocando o autocomplete no input, você dá significado às lacunas a serem pre
         </p>
 </form>
 
+para input number: step( + x/ - x); min, max, value(pra começar já com um valor)
 
+para number se usa min e max, para text se usa maxlenght e minlenght
+
+input:month
+
+Recapitulando...
+Estrutura do formulário:
+formulario        <form action="cadastro.php" method="post">
+paragrafo	    <p>
+label 			<label for="inome">Usuário
+input			  <input type="text" name="nome" id="inome" minlenght="3" maxlenght="30" required>
+botão de envio			<input type="submit">
+botão de limpar			<input type="reset">
+
+
+coisas importantes:
+required(só pode enviar o formulário se preencher a lacuna)
+size(define o tamanho da caixa de preenchimento)
+placeholder(mensagem dentro da caixa de preenchimento)
+autocomplete(dentro do form da opções de preenchimento)
+autocomplete(dentro do input você define o tipo: se é nome, senha, nick)
   
