@@ -209,3 +209,62 @@ file
             <input type="reset" value="LIMPAR">
         </p>
 </form>
+
+	ELEMENTOS FORA DA TAG INPUT
+option
+optgroup
+datalist
+
+<form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest" required>
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="CONT">Contador</option>
+                <option value="ELET">Eletricista</option>
+                <option value="PROF">Professor</option>
+                <option value="ADMI">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+</p>
+
+Um pouco de JS no index8, 9 e 10 do exercício 26. Revisar, pois é a coisa mais legal do capítulo:
+
+ <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1925" max="2025" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Você tem, ou terá: </label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
