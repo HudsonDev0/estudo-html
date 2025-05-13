@@ -268,3 +268,8 @@ Um pouco de JS no index8, 9 e 10 do exercício 26. Revisar, pois é a coisa mais
             iidade.innerHTML = Number(atual) - Number(iano.value)
         }
     </script>
+
+		MEDIA QUERIES
+
+Utilizado tanto para a responsividade do site em diversos dispositivos, quanto para coisas específicas como:
+Formatar o site para impressão em PDF, tirando elementos inúteis para a impressão.
