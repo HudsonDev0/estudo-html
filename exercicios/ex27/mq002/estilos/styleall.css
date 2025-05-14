@@ -12,6 +12,8 @@ html, body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1 {
