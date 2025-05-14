@@ -281,6 +281,6 @@ media="print": exibição para impressão.
 	MEDIA QUERY = MEDIA TYPE = MEDIA FEATURES
 
 Media features: conseguimos adicionar parâmetro dentro do parâmetro screen no link:css. Veja:
-media="screen and (orientation:portrait)" <- aqui eu estou dizendo que as configurações serão para tela retrato.
-media="screen and (orientation:landscape)" <- e aqui para paisagem.
+media="screen and (orientation: portrait)" <- aqui eu estou dizendo que as configurações serão para tela retrato.
+media="screen and (orientation: landscape)" <- e aqui para paisagem.
 media="all" <- configuração geral, para todas as mídias. É o principal. Os outros serão configurações adicionais apenas.
