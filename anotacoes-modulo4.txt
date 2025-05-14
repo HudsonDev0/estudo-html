@@ -273,3 +273,7 @@ Um pouco de JS no index8, 9 e 10 do exercício 26. Revisar, pois é a coisa mais
 
 Utilizado tanto para a responsividade do site em diversos dispositivos, quanto para coisas específicas como:
 Formatar o site para impressão em PDF, tirando elementos inúteis para a impressão.
+
+Mediatypes: dentro do link css, colocando o parametro media conseguimos estabelecer para qual exibição será aquele css:
+media="screen": será para a exibição do site em tela.
+media="print": exibição para impressão.
