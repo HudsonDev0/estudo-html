@@ -277,3 +277,10 @@ Formatar o site para impressão em PDF, tirando elementos inúteis para a impres
 Mediatypes: dentro do link css, colocando o parametro media conseguimos estabelecer para qual exibição será aquele css:
 media="screen": será para a exibição do site em tela.
 media="print": exibição para impressão.
+
+	MEDIA QUERY = MEDIA TYPE = MEDIA FEATURES
+
+Media features: conseguimos adicionar parâmetro dentro do parâmetro screen no link:css. Veja:
+media="screen and (orientation:portrait)" <- aqui eu estou dizendo que as configurações serão para tela retrato.
+media="screen and (orientation:landscape)" <- e aqui para paisagem.
+media="all" <- configuração geral, para todas as mídias. É o principal. Os outros serão configurações adicionais apenas.
