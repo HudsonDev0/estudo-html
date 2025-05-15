@@ -15,6 +15,27 @@ Extra Large (Large Laptops/Desktops): 1200px and up
 */
 
 @media print {
+    body{
+        /*background-image: url('../imagens/back-print.jpg'); desnecessário pq não funciona kkkk*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        color: black;
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        margin-top: 20px;
+        border: 1px solid black;
+    }
+    main::after{
+        content: 'Essa impressão foi solicitada através de um exercício de estudo de html do Hudson.';
+    }
+img#phone { display: none;  }
+img#tablet{ display: none; }
+img#pc    { display: none;  }
+img#tv    { display: none;  }
+img#print { display: block;  }
 
 }
 
