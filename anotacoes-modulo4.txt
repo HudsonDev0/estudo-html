@@ -284,3 +284,14 @@ Media features: conseguimos adicionar parâmetro dentro do parâmetro screen no 
 media="screen and (orientation: portrait)" <- aqui eu estou dizendo que as configurações serão para tela retrato.
 media="screen and (orientation: landscape)" <- e aqui para paisagem.
 media="all" <- configuração geral, para todas as mídias. É o principal. Os outros serão configurações adicionais apenas.
+
+é possível utilizar @media dentro da tag style para fazer declarações de media queries. Exemplo:
+
+<style>
+@media screen and (orientation: portrait){
+
+}
+</style>
+
+	MOBILE FIRST
+basicamente é pensar na construção do site PRIMEIRO no mobile, e depois ir adaptando-o para telas maiores.
