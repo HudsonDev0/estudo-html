@@ -83,7 +83,9 @@ Para adicionar emojis, colocar &#x seguido de seu código hexadecimal. Exemplo: 
 
 => Direito de imagem:
 Posso utilizar qualquer imagem para fazer meu site? Não! Precisamos achar imagem sem direito autoral, de uso livre.
-Sites para procurar imagem de uso livro:
+
+		SITES PARA IMAGENS DE USO LIVRE:
+
  unsplash.com    pexels.com   freepic.com
 
 => Melhores tamanhos de imagem para site:
@@ -96,9 +98,19 @@ e também de links externos, só colar dentro do src="" o endereço da imagem.
 
 => Para favicon:
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-Site de icones gratuitos: iconarchive
-Site para desenhar o próprio icone: favicon.cc
-Site para criar icone a partir de texto ou png: favicon.io
+	
+	SITE DE ICONES GRATUITOS:
+
+            iconarchive
+
+	Site para desenhar o próprio icone: 
+
+            favicon.cc
+
+	Site para criar icone a partir de texto ou png: 
+
+	   favicon.io
+
 **O ICONE PRECISA ESTAR EM 16x16!!**
 
 

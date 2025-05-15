@@ -295,3 +295,12 @@ media="all" <- configuração geral, para todas as mídias. É o principal. Os o
 
 	MOBILE FIRST
 basicamente é pensar na construção do site PRIMEIRO no mobile, e depois ir adaptando-o para telas maiores.
+
+Typical device brakepoints: tamanhos padrões de telas.
+Extra Small (Phones): 600px and down
+Small (Portrait Tablets/Large Phones): 600px and up
+Medium (Landscape Tablets): 768px and up
+Large (Laptops/Desktops): 992px and up
+Extra Large (Large Laptops/Desktops): 1200px and up
+
+Rever exercício 26 mq003. Responsividade usando @media muito interessante.

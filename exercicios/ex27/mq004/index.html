@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span class="material-symbols-outlined" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="options">
+            <ul>
+                <li><a href="#">Opção1</a></li>
+                <li><a href="#">Opção2</a></li>
+                <li><a href="#">Opção3</a></li>
+                <li><a href="#">Opção4</a></li>
+                <li><a href="#">Opção5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis temporibus, optio dolorum magnam, perspiciatis ducimus deserunt qui reprehenderit sapiente nisi consequuntur doloribus et mollitia illum vitae unde dicta iusto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique fugit sed sapiente minima aut eos voluptates eligendi odit vitae non dolore totam a tempora perspiciatis numquam quidem, molestiae, nobis aliquid?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam earum labore ea, architecto rem libero sint at minima dicta consequuntur nobis iure dolorum vel similique cupiditate aut dolor nisi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur nemo perferendis quae maxime quibusdam? Consequatur qui ad laudantium eaque sapiente veritatis. Similique odit minus iure numquam animi quos at? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa maxime error et natus nihil quia repellat blanditiis aut ratione quod temporibus rem vel odit earum sit commodi delectus, aperiam eius.</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde corporis sit consequatur fuga! Voluptatibus fuga hic voluptatum, consequuntur id ratione eligendi impedit provident quis dolorum dignissimos fugiat quae eaque!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laborum suscipit, repellat impedit, totam, laboriosam sapiente unde ad nemo placeat incidunt adipisci. Minus possimus ducimus iusto deleniti reprehenderit aliquam exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, cupiditate quia. Tenetur natus facere saepe sint rem, aspernatur magnam earum, nihil officiis aliquid amet qui. Repellat facere voluptatibus quidem repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi harum, natus est tenetur tempora rerum sequi, sed magnam adipisci voluptatum repudiandae praesentium excepturi delectus nemo quam eum fugit sunt?</p>
+        </article>
+    </main>
+    <script>
+        function clickmenu(){
+           if (options.style.display == 'block'){
+               options.style.display = 'none'
+           } else {
+                options.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>
