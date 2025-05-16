@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px){
+    #burger{
+        display: none;
+    }
+    menu{
+        background-image:linear-gradient(to bottom, rgb(124, 90, 27), #5e410c);
+        display: block;
+        padding: 10px;
+    }
+    menu li{
+        display: inline;
+        border: none;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    menu li:hover{
+        background-color: rgba(0, 0, 0, 0.116);
+        border-radius: 10px;
+    }
+
+    menu a{
+       padding: 5px;
+       margin: 0px; 
+    }
+
+    menu a:hover{
+        padding: 5px;
+    }
+    
+}

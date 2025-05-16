@@ -303,4 +303,4 @@ Medium (Landscape Tablets): 768px and up
 Large (Laptops/Desktops): 992px and up
 Extra Large (Large Laptops/Desktops): 1200px and up
 
-Rever exercício 26 mq003. Responsividade usando @media muito interessante.
+Rever exercício 27 mq003. Responsividade usando @media muito interessante.
