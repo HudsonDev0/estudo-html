@@ -304,3 +304,5 @@ Large (Laptops/Desktops): 992px and up
 Extra Large (Large Laptops/Desktops): 1200px and up
 
 Rever exercício 27 mq003. Responsividade usando @media muito interessante.
+
+É tanta coisa nova nesse formulário responsivo que eu nem sei o que anotar kkkkk qualquer coisa eu revejo as aulas.

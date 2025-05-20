@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao iFrame</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 250px;
+            border: 5px solid red;    
+        }
+
+        #iframe2{
+            width: 70vw;
+            height: 50vh;
+            display: block;
+            margin: auto;
+            background-color: black;
+            background-size: cover;
+            background-color: center top;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        ul li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Revisão completa de iframes</h1>
+    <iframe src="https://google.com" frameborder="0">
+    <a href="https://google.com" target="blank">Link do google</a>
+    </iframe>
+    <!--Não funciona porque o link só aparece se der ERRO. Se o link usado no IFRAME for bloqueado para exibição em outros sites, simplesmente não irá aparecer nada a não ser a mensagem de que o site é bloqueado.-->
+    <iframe src="https://hudsondev0.github.io/estudo-html/exercicios/ex27/mq004/index.html" frameborder="0">
+        <a href="https://hudsondev0.github.io/estudo-html/exercicios/ex27/mq004/index.html">Link do mini projeto</a>
+    </iframe>
+
+    <h2>Iframe que muda ao clicar em link</h2>
+    <iframe src="" frameborder="0" id="iframe2" name="if2" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <ul>
+        <li><a href="https://hudsondev0.github.io/projeto-login-html-css/" target="if2" sandbox="sandbox">Canal 1</a></li>
+        <li><a href="https://hudsondev0.github.io/estudo-html/exercicios/ex27/mq003/index.html" target="if2">Canal 2</a></li>
+        <li><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29411.484326351845!2d-43.46514737993769!3d-22.860363892991586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1spt-BR!2sbr!4v1747592753806!5m2!1spt-BR!2sbr" target="if2">Canal 3</a></li>
+    </ul>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29411.484326351845!2d-43.46514737993769!3d-22.860363892991586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1spt-BR!2sbr!4v1747592753806!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

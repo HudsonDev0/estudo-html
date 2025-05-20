@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao Form</title>
+</head>
+<body>
+    <h1>Revisão</h1>
+    <form action="xxx.php" method="post">
+        <p>
+            <label for="ilog">Login:</label>
+            <input type="text" name="login" id="ilog" minlength="3" maxlength="20" required placeholder="Nome de usuário" size="13">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isen" minlength="8" required placeholder="Palavra-passe" size="13">
+        </p>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+    </form>
+    <br><br>
+    <form action="xxx.php" method="post">
+       <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" value="5">
+       </p>
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required placeholder="algumemail@mail.com">
+        </p> 
+    </form>
+    <br>
+        <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset><legend>SEXO</legend><!--
+            Legenda para o fieldset
+            para seletores de sexo é necessário utilizar o input radio com o mesmo nome, mas com id diferente.
+            -->
+        <input type="radio" name="sx" id="imasc"> <label for="imasc">Masculino</label>
+        <input type="radio" name="sx" id="ifem"> <label for="ifem">Feminino</label>
+        </fieldset>
+        <!--
+        Fieldset: uma box de conteúdo
+        -->
+        <fieldset>
+            <legend>Esportes Preferidos</legend>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label><br>
+            <input type="checkbox" name="fute" id="ifute" checked> <label for="ifute">Futebol</label><br>
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label><br>
+            <input type="checkbox" name="nata" id="inata"> <label for="inata">Natação</label><br>
+            <input type="checkbox" name="hoq" id="ihoq"> <label for="ihoq">Hóquei</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    <br>    
+    
+            <!--
+        Criação de opções em formulário:
+        dentro de um form, criar um select depois de uma label com o mesmo id da label. Dentro do select colocar uma option padrão e dentro da option colocar um optgroup com uma label para exibir o nome para a escolha das opções.
+        Dentro da optgroup vc colocará as option com seus determinados valores. A label da optgroup vai ser o que vai aparecer na hora de selecionar, separando grupos de opções. 
+        -->
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="imusic"></label>
+            <select name="music" id="imusic" required>
+                <option value="" selected></option>
+                <optgroup label="Estilos Musicais">
+                    <option value="FNK">Funk</option>
+                    <option value="METAL">Heavy metal/Metal no geral</option>
+                    <option value="JAZ">Jazz</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="icarne"></label>
+            <select name="carne" id="icarne" required>
+                <option value=""></option>
+                    <optgroup label="Churrasco">
+                    <option value="FNG">frango</option>
+                    <option value="PIC">Picanha</option>
+                    <option value="ALC">AlcAtrA</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <!--
+        Datalist: abaixo de uma label, colocar um input text com o tipo texto chamando uma lista, que será a lista de opções: <input type="text" name="prof" id="iprof" LIST="lstprof"
+        Criando a lista:
+        <datalist id="lstprof">
+            <option value="bla">Blabla</option>
+        </datalist>
+    
+        -->
+
+        <p>
+            <label for="lista">lalala</label>
+            <input type="text" id="lista" list="lst">
+            <datalist id="lst">
+                <option value="cla">claro</option>
+                <option value="viv">vivo</option>
+                <option value="tim">tim</option>
+                <option value="oi">oi</option>
+            </datalist>
+
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+
+</body>
+</html>
