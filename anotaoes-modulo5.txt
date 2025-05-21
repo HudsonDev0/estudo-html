@@ -1,0 +1,69 @@
+		
+		FLEX BOX
+
+Caixas flexíveis. Muito simples o conceito:
+Dentro de uma caixa, há outras caixas que irão se adaptar conforme o tamanho da caixa maior. Isso automaticamente.
+
+Pra isso, você colocará "display: flex;" no conteiner maior(conteiner pai) e flex auto nas caixas internas(filhos).
+Exemplo básico:
+ <style>
+        div.conteiner{
+            background-color: blanchedalmond;
+            padding: 5px;
+            display: flex;
+            border: 1px solid black;
+        }
+        
+        div.item{
+            background-color: aquamarine;
+            text-align: center;
+            margin: 2px;
+            flex: auto;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fleexx</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+
+		FLEX DIRECTION
+
+Flex-direction é usado no conteiner pai e a direção é da esquerda para a direita.
+PADRÃO: flex-direction: row;
+DIREÇÂO INVERSA: flex-direction: row-reverse;
+VERTICAL: flex-direction: column;(padrão de direção: de cima pra baixo)
+VERTICAL DIREÇÃO INVERSA: flex-direction: column-reverse;
+
+		EIXOS
+Quando você escolhe uma direção, são criados 2 eixos(axis): main-axis(eixo principal, da esquerda pra direita)
+com pontos principais: main-start e main-end. cross-axis(eixo transversal, de cima pra baixo) com pontos principais:
+cross-start e cross-end.
+
+   Quando você inverte a direção, o main-axis é invertido. Se você coloca row-reverse, o main-start e o main-end se invertem.
+Já o cross-axis não é invertido. CONSULTAR AULA 3, MÓDULO 5, Tempo 10:45.
+
+		FLEX WRAP
+Comando utilizado no container pai que vai definir o comportamento desse container. Configuração PADRÃO: nowrap;
+No nowrap ele não quebra o conteúdo, ou seja, se o container for diminuído e ficar menor que a quantidade de itens,
+os itens encolherão.
+
+Flex-wrap: wrap; <-- Com esse comando dentro do container pai, os itens irão quebrar caso o conteiner fique menor
+que o tamanho dos itens de dentro. Quebrando no eixo vertical(cross-axis). Ou seja: o último item irá ir para o sentido
+do eixo transversal.
+
+Flex-wrap: wrap-reverse: irá quebrar os itens, mas pro sentido oposto ao eixo transversal.
+
+	FLEX FLOW
+
+Flex-flow é um shorthand para flexdirection e flexwrap. Exemplo: flex-flow: row wrap.
+
+
