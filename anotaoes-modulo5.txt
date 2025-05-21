@@ -66,4 +66,42 @@ Flex-wrap: wrap-reverse: irá quebrar os itens, mas pro sentido oposto ao eixo t
 
 Flex-flow é um shorthand para flexdirection e flexwrap. Exemplo: flex-flow: row wrap.
 
+	JUSTIFY CONTENT E ALIGN ITENS
+   --> Justify-content: vai fazer o alinhamento dos itens em relação ao main-axis(eixo x no row, eixo y no column).
+
+- flex-start: o primeiro item ficará colado exatamente no main-start.
+
+-- flex-end: o ÚLTIMO item ficará grudado no main-end.
+
+- flex-center: os itens ficarão centralizados(não estipula espaço entre os itens, diferente dos abaixo).
+
+-- space-between: com essa propriedade, o primeiro item ficará no main-start e o último ficará no main-end. Os outros itens
+ficarão distribuídos com espaçamento iguais.
+
+- space-evenly: os elementos ficarão com espaçamento iguais.
+
+-- space-around: esse comando dividirá o conteiner pelo número de itens que tem nele e vai centralizar os itens dentro
+desse espaço calculado, fazendo com que o espaço da borda esquerda e direita em relação ao primeiro e ao último item,
+tenha um espaçamento de 1x, e o itens com um espaçamento entre si de 2x.
+
+Resumo:
+ space-between: o primeiro e o ultimo elemento colado nas bordas.
+ space-evenly: primeiro e ultimo elemento com espaçamento nas bordas.
+ space-around: primeiro e ultimo elemento com espaçamento menor nas bordas.
+
+  --> Align-itens: vai fazer o alinhamento dos itens em relação ao cross-axis(eixo y no row, eixo x no column).
+
+- stretch: vai esticar os itens ao tamanho do cross-axis.
+
+-- start: ele vai grudar sempre no start do main-axis.
+
+- center: vai alinhas ele no centro do cross-axis.
+
+Resumo:
+  justify-content: conteiner pai.
+  align-items: conteiners filho.
+
+ 
+
+
 
