@@ -67,6 +67,7 @@ Flex-wrap: wrap-reverse: irá quebrar os itens, mas pro sentido oposto ao eixo t
 Flex-flow é um shorthand para flexdirection e flexwrap. Exemplo: flex-flow: row wrap.
 
 	JUSTIFY CONTENT E ALIGN ITENS
+
    --> Justify-content: vai fazer o alinhamento dos itens em relação ao main-axis(eixo x no row, eixo y no column).
 
 - flex-start: o primeiro item ficará colado exatamente no main-start.
@@ -86,7 +87,7 @@ tenha um espaçamento de 1x, e o itens com um espaçamento entre si de 2x.
 
 Resumo:
  space-between: o primeiro e o ultimo elemento colado nas bordas.
- space-evenly: primeiro e ultimo elemento com espaçamento nas bordas.
+ space-evenly: todos os itens com o mesmo espaçamento.
  space-around: primeiro e ultimo elemento com espaçamento menor nas bordas.
 
   --> Align-itens: vai fazer o alinhamento dos itens em relação ao cross-axis(eixo y no row, eixo x no column).
@@ -97,10 +98,53 @@ Resumo:
 
 - center: vai alinhas ele no centro do cross-axis.
 
-Resumo:
-  justify-content: conteiner pai.
-  align-items: conteiners filho.
 
+	ALIGN CONTENT
+Não é justify-content nem align-items. É ALIGN CONTENT!!
+Ele irá alinhar os conteúdos que estão com wrap, ou seja, quando o conteiner "quebrar", ele entrará em ação alinhando o item
+que foi "responsável" pela quebra.
+
+ -stretch: ele irá esticar os itens.
+
+---start: colará o item colado ao main-start.
+
+ -end: todos os itens no main-end.
+
+---center: centro.
+
+ -space-between: mesma coisa que o do justify, só que no eixo transversal(cross-axis).
+
+---space-evenly: mesma coisa... só que no eixo transversal.
+
+ -space-aroud: sim, só que no eixo transversal.
+
+
+	DIFERENÇA ENTRE ALIGN-CONTENT E JUSTIFY-CONTENT:
+
+O justify-content é utilizado quando o conteiner é NOWRAP. Já o align-content é utilizado quando o conteiner é WRAP!
+
+	FLEX-ITEMS
+
+   Por padrão, os itens não são flexíveis, poréeem... existem sim propriedades para os itens. Order é uma dessas
+propriedades dos itens, onde você consegue definir a ordem de exibição dos mesmos.
+order: 0 -> padrão
+Colocando um style dentro da div -> <div class="item" style="order: -3"> você começa a estabelecer ordem de posição.
+
+	Align-self: se aplica a cada um dos itens. Cada item pode ter um alinhamento diferente. Ele funcionará diretamente
+no cross-axis.
+
+auto: herdará a característica de alinhamento vertical do pai(conteiner).
+flex-start: alinhamento perto do cross-start.
+flex-end: alinhamento perto do cross-end.
+center: o meio no eixo transversal.
+stretch: vai esticar.
+
+	Flex-basis
+
+ -auto: a largura dos itens depende do conteúdo que está dentro.
+---estabelecendo um tamanho em píxel: será o tamanho estabelecido independente do conteúdo do item. Porém ele não permanece
+assim independente da situação, porque se você diminuir muito o conteiner, o tamanho dos itens diminuirá. É assim que
+funciona o flex-basis com um tamanho estabelecido.
  
 
 
