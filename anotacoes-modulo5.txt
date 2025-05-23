@@ -147,5 +147,23 @@ assim independente da situação, porque se você diminuir muito o conteiner, o 
 funciona o flex-basis com um tamanho estabelecido.
  
 
+	Mais propriedade pros itens...
+
+flex-shrink: 1 (padrão)
+flex-grow: 0 (padrão)
+
+Os parâmetros são 0 e N. Se tiver 0 não pode, se tiver N então pode. Então, colocando 1 nesses dois parâmetros
+você tem itens completamente flexíveis e proporcionais.
+
+Isso você pode colocar em itens específicos ou pra todos os itens! E com isso você tem possibilidades de crescimento.
+Como assim? Bom, você consegue estabelecer quanto um item irá crescer com o comando flex-grow, ou flex-shrink.
+Exemplo:
+
+<div id="item1">A</div>
+<div id="item2">B</div>
+
+Se colocarmos no item1 flex-grow: x; e no item2 flex-grow: 2x; o item2 irá crescer o dobro do item1.
+
+
 
 
