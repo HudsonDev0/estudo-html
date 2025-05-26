@@ -165,5 +165,9 @@ Exemplo:
 Se colocarmos no item1 flex-grow: x; e no item2 flex-grow: 2x; o item2 irá crescer o dobro do item1.
 
 
+	Propriedade flex:
+Flex é uma shorthand que abrange flex-grow, flex-shrink e o tamanho do item, nessa ordem. Então um flex: 0 1 150px significa
+que o item tem flex-grow: 0, flex-shrink: 1, e 150px de tamanho!
+
 
 
