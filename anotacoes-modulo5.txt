@@ -169,5 +169,14 @@ Se colocarmos no item1 flex-grow: x; e no item2 flex-grow: 2x; o item2 irá cres
 Flex é uma shorthand que abrange flex-grow, flex-shrink e o tamanho do item, nessa ordem. Então um flex: 0 1 150px significa
 que o item tem flex-grow: 0, flex-shrink: 1, e 150px de tamanho!
 
+mais sobre flex...
+
+flex: 0 1 auto(padrão); --> flex: initial
+flex: 0 0 auto; --> flex: none
+flex 1 1 auto; --> flex: auto;
+
+Em alguns códigos tem escrito flex: 3 ou algo do tipo. Nesses casos, o número vale pro grow, e quanto ao shrink e o basis
+são padrão. Então flex: 3 nada mais é que: flex: 3 1 auto;
+
 
 

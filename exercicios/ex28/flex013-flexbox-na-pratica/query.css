@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
+    header{
+        flex-flow: column wrap;
+    }
+
+    header h1{
+        flex: 0 1 50px;
+    }
+
+    nav{
+        flex-flow: column wrap;
+        justify-content: flex-end;
+    }
+
+    nav a{
+        width: 85vw;
+        text-align: center;
+        margin: 5px;
+        border: 3px solid rgb(68, 22, 112);
+    }
+}
