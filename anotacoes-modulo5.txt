@@ -178,5 +178,9 @@ flex 1 1 auto; --> flex: auto;
 Em alguns códigos tem escrito flex: 3 ou algo do tipo. Nesses casos, o número vale pro grow, e quanto ao shrink e o basis
 são padrão. Então flex: 3 nada mais é que: flex: 3 1 auto;
 
+		GRID LAYOUT
 
+   Definição: é um sistema para criação de layout baseado em uma grade bidimensional e otimizado para design de
+interfaces de usuário. Nesse modelo de grade, os elementos-filhos do contêiner que defina a grade podem ser posicionados
+livremente em espaços criados na estrutura, quer ela tenha sido definida com suas dimensões flexíveis ou fixas.
 
