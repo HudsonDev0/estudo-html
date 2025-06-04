@@ -184,3 +184,80 @@ são padrão. Então flex: 3 nada mais é que: flex: 3 1 auto;
 interfaces de usuário. Nesse modelo de grade, os elementos-filhos do contêiner que defina a grade podem ser posicionados
 livremente em espaços criados na estrutura, quer ela tenha sido definida com suas dimensões flexíveis ou fixas.
 
+	Anatomia de um GRID
+
+   Primeira confusão: row e line. As duas palavras em português querem dizer linha, porém essas palavras significam coisas
+diferentes.
+Para entendimento mais lúdico sobre grid, ver a pasta de anatomia de grid.
+
+   Segunda confusão: as grid lines podem ter endereços diferentes. Exemplo:
+   1        2        3         4
+1__|________|________|_________|_
+2__|________|________|_________|_
+3__|________|________|_________|_
+4__|________|________|_________|_
+   |        |        |         |
+
+As linhas 1, podem ser lidas como -4, linhas 2 como -3, linhas 3 como -2 e linhas 4 como -1. Ficando assim:
+
+       -4       -3       -2        -1
+        1        2        3         4
+ -4 1 __|________|________|_________|_
+ -3 2 __|________|________|_________|_
+ -2 3 __|________|________|_________|_
+ -1 4 __|________|________|_________|_
+        |        |        |         |
+
+
+	Propriedades do Container do Grid Layout
+--- display
+- grid-template-columns
+--- grid-template-rows
+- grid-gap
+
+  No inspecionar elemento, do navegador, você consegue ver as linhas da grid. Clicando no conteiner, vai aparecer uma opção
+de grid do lado e é só clicar!
+
+  Mais propriedades do container grid
+--- align-items
+- justify-items
+--- align-content
+- justify-content
+	Tudo que for align, será referente ao alinhamento vertical. E tudo que foi justify, será referente a horizontal.
+Lembra daqueles espaçamentos aprendidos no flex-box? space-between.. space-around... então.. se aplica aqui também.
+   Também teremos:
+- grid-auto-row
+--- grid-auto-column
+- place-items
+--- place-content
+- grid-template
+
+
+--- grid-auto-row: quando você adicionar mais uma linha, com esse comando você estabelece o tamanho.
+
+- grid-auto-column: mesma coisa só que com coluna
+
+--- place-items: shorthand para align-items e justify-items. Exemplo: place-items: center start;
+-> quer dizer que o align-items é center e o justify-items é start!
+
+- place-content: shorthand para align e justify content. Funciona da mesma forma que o place-items.
+
+		(o primeiro parâmetro é o align e depois o justify)
+
+--- grid-template: shorthand para grid-template-rows e columns. Exemplo: grid-template: 100px 100px 100px/auto auto auto;
+primeiro rows e depois columns!
+
+
+	FUNÇÃO REPEAT()
+  Ao invés de você ficar escrevendo "auto auto auto", "100px 100px 100px" você pode simplesmente colocar assim:
+ repeat(3, auto). Na prática fica: 
+				    grid-template: repeat(3, auto) repeat(3, 100px) 
+	USANDO UNIDADE FRACIONAL
+  Imagine um contaner grid de 1500px, podemos dividi-lo assim: grid-template-columns: 1fr 1fr 1fr(ao invés de auto)
+por que? Porque assim nós estaremos trabalhando com fração. Cada item tem 1 fração(de 3, no caso) do grid total.
+   Desse modo você consegue trabalhar com proporcionalidade. se você colocar 1fr 2fr 1fr, o item do meio terá o dobro
+do tamanho dos demais. 
+
+grid-auto-flow: altera a quebra da grid.
+	
+

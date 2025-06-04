@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Grid Layout</title>
+    <style>
+        .conteiner{
+            border: 3px solid blue;
+            display: grid;
+
+            /*
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            
+                Simplificado com o grid-template! (repeat(rows / columns))
+
+            */
+
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 80px 50% 3fr 1fr;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+
+            /*
+            align-items e justify-items / align-content e justify-content
+            
+                SIMPLIFICADOS! place-items / place-content
+                                (eixo Y)      (eixo X)
+            */
+            
+            place-items: normal normal;
+            place-content: normal normal;
+            gap: 10px;
+        }
+
+        .item{
+            border: 2px solid violet;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+</body>
+</html>
